@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Reset CSS</title>
+	<!--  Importation du fichier normalize pour réinitialiser les styles par défaut du HTML -->
+	<link rel="stylesheet" href="./normalize.css" />
+	<link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+	<header>
+		<h1 class="center">Default CSS</h1>
+		<div class="title-underline"></div>
+	</header>
+	<main>
+		<section>
+			<h2>Exemple de contenu avec des titres</h2>
+			<p>
+				Ce projet est destiné à fournir un exemple de base de configuration
+				CSS pour les débutants. Les styles sont conçus pour être simples et
+				faciles à comprendre, avec des commentaires explicatifs et des
+				pratiques d'accessibilité intégrées.
+			</p>
+			<h3>Niveaux de titres</h3>
+			<h1>Titre de premier niveau</h1>
+			<h2>Titre de deuxième niveau</h2>
+			<h3>Titre de troisième niveau</h3>
+			<h4>Titre de quatrième niveau</h4>
+			<h5>Titre de cinquième niveau</h5>
+			<h6>Titre de sixième niveau</h6>
+
+			<h3>Liens</h3>
+			<a href="#">Exemple de lien</a>
+
+			<h3>Listes</h3>
+			<h4>Liste non ordonnée</h4>
+			<ul class="classic-li">
+				<li>Élément de liste 1</li>
+				<li>Élément de liste 2</li>
+				<li>Élément de liste 3</li>
+			</ul>
+
+			<h4>Liste ordonnée</h4>
+			<ol class="classic-li">
+				<li>Élément de liste 1</li>
+				<li>Élément de liste 2</li>
+				<li>Élément de liste 3</li>
+			</ol>
+
+			<h3>Images</h3>
+			<img src="./tigers-1920.jpg" alt="Image de tigres" class="img" />
+
+			<h3>Boutons</h3>
+			<button type="button" class="btn">Bouton régulier</button>
+			<button type="button" class="btn btn-hipster">Bouton hipster</button>
+
+			<h3>Alertes</h3>
+			<div class="alert alert-danger" role="alert">
+				Ceci est une alerte danger
+			</div>
+			<div class="alert alert-success" role="alert">
+				Ceci est une alerte succès
+			</div>
+
+			<h3>Formulaires</h3>
+			<form class="form" aria-labelledby="contact-form-title">
+				<h4 id="contact-form-title">Formulaire de contact</h4>
+				<div class="form-row">
+					<label class="form-label" for="name">Nom</label>
+					<input type="text" id="name" placeholder="Entrez votre nom" class="form-input" />
+				</div>
+				<div class="form-row">
+					<label class="form-label" for="number">Numéro</label>
+					<input type="number" id="number" class="form-input" />
+				</div>
+				<div class="form-row">
+					<label class="form-label" for="email">Email</label>
+					<input type="email" id="email" class="form-input" />
+					<small class="form-alert">Veuillez fournir une valeur</small>
+				</div>
+				<div class="form-row">
+					<label class="form-label" for="textarea">Message</label>
+					<textarea id="textarea" class="form-textarea">
+Valeur par défaut</textarea>
+				</div>
+				<button class="btn btn-block">Soumettre</button>
+			</form>
+			<div class="loading" aria-label="Chargement"></div>
+		</section>
+	</main>
+	<footer>
+		<p class="center">© 2024 Default CSS. Licence : non (Droit public).</p>
+	</footer>
+</body>
+
+</html>
